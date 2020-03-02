@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Div Length</title>
+<
+<link rel = "stylesheet"type = "text/css"href = "css/main.css" />
+
+<script>
+ // menu on click 
+ 
+ function openNav() {
+    document.getElementById('mySidenav').style.width = '300px';
+  }
+
+  function closeNav() {
+    document.getElementById('mySidenav').style.width = '0';
+  }
+
+</script>
+
+</head> 
+ 
+<body>
+  <nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#red" >Top</a>
+      <a href="#green" >Movie</a>
+      <a href="#blue" >Tenbo</a>
+      <a href="#yellow" >Race</a>
+    </div>
+    <span class="hamburger" onclick="openNav()">&#9776;</span>
+  </nav>
+    
+  <!--　Debug で使うです。-->
+   <div id="fixed-red" class="fixed-red red-active"  ></div>
+   <div id="fixed-green" class="fixed-green"></div>
+   <div id="fixed-blue" class="fixed-blue"  ></div>
+   <div id="fixed-yellow" class="fixed-yellow"  ></div>
+    
+  
+   <div id="red" class="color"></div>
+   
+   <div id="green" class="color"></div>
+   
+   <div id="blue" class="color"></div>
+   
+   <div id="yellow" class="color"></div>
+   
+   
+</body> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
